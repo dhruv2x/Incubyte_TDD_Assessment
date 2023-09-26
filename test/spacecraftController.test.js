@@ -12,7 +12,7 @@ test("If only one command", () => {
       direction: "N",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
 
@@ -28,7 +28,7 @@ test("If only one command", () => {
       direction: "N",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
 
@@ -44,7 +44,7 @@ test("If only one command", () => {
       direction: "U",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
 
@@ -60,7 +60,7 @@ test("If only one command", () => {
       direction: "W",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
   
@@ -76,7 +76,7 @@ test("If only one command", () => {
       direction: "S",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
   
@@ -92,7 +92,7 @@ test("If only one command", () => {
       direction: "N",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
   
@@ -108,6 +108,6 @@ test("If only one command", () => {
       direction: "D",
     };
   
-    const output = mainCommand(commands, start);
+    const output = spacecraftController(commands, start);
     expect(output).toStrictEqual(expected);
   });
