@@ -30,3 +30,19 @@ test("If only one command", () => {
     const output = mainCommand(commands, start);
     expect(output).toStrictEqual(expected);
   });
+
+  test("for same repeateted command", () => {
+    const commands = ["f", "f", "f", "f", "f"];
+  
+    const start = {
+      coordinates: [0, 0, 0],
+      direction: "U",
+    };
+    const expected = {
+      coordinates: [0, 0, 5],
+      direction: "U",
+    };
+  
+    const output = mainCommand(commands, start);
+    expect(output).toStrictEqual(expected);
+  });
