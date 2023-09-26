@@ -30,6 +30,9 @@ function spacecraftController(commands, start) {
       direction = turnDown(direction);
       console.log(coordinates, direction);
     } 
+    else {
+        console.log("Please enter valid command");
+      }
   }
   console.log("The Final Position of Lunar Craft is" + coordinates, direction);
   return { coordinates, direction };
